@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ShieldPass</string>
+    <string name="create_master_password">Create Master Password</string>
+    <string name="create_master_password_description">It will be used to decrypt all your passwords</string>
+    <string name="password">Password</string>
+    <string name="create">Create</string>
+    <string name="enter_master_password_description">Enter the correct master password to unlock</string>
+    <string name="locked">Locked</string>
+    <string name="login">Login</string>
+    <string name="new_password_item">New password item</string>
+    <string name="copy_username">Copy username</string>
+    <string name="copy_password">Copy password</string>
+    <string name="website">Website</string>
+    <string name="username">Username</string>
+    <string name="add_password">Add Password</string>
+    <string name="shortcut_label_add_password">Add password</string>
+    <string name="generate_password">Generate</string>
+    <string name="developer_name">Deepak Soni</string>
+</resources>

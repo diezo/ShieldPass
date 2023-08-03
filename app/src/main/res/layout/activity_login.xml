@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@null"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_master_password"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_master_password_description"
+            android:textColor="@color/primary"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/Login_MasterPasswordInput"
+            android:textColor="@color/primary"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColorHint="#CFCFCF"
+            android:layout_marginTop="40dp"
+            android:textSize="16sp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/master_password_input"/>
+
+        <TextView
+            android:id="@+id/Login_DoneButton"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/master_password_done"
+            android:text="@string/create"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/Login_ProgressBar"
+            android:layout_marginTop="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:indeterminate="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Login_DeveloperProfileButton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/linkedin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developer_name"/>
+
+    </LinearLayout>
+
+</LinearLayout>

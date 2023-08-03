@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/Home_ActionBar"
+        android:background="@color/primary"
+        android:scaleType="centerInside"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/logo_white"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/Home_NoItemsRepresentation"
+        android:contentDescription="@null"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cat"
+        android:alpha="0.1"
+        android:layout_centerInParent="true"/>
+
+    <ListView
+        android:id="@+id/Home_PasswordItemsListView"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/password_item"
+        android:layout_below="@id/Home_ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/Home_AddPasswordButton"
+        android:focusable="true"
+        android:clickable="true"
+        android:contentDescription="@string/new_password_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/baseline_add_24"
+        android:background="@drawable/add_password_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

@@ -1,5 +1,7 @@
 # ShieldPass
- Offline Password Manager (Android)
+ **Offline Password Manager (Android)**
+
+Download app from [here](https://appho.st/d/C1ZnfnHj)
 
 ShieldPass is a secure password manager built with Android Studio + Java.
 
